@@ -3,14 +3,15 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"assets/AssetManifest.bin": "4718e7180679ec3bd58c57c7cfce7a0b",
-"assets/AssetManifest.bin.json": "ec7e70f31d7d18cab876fa9a1f68e81a",
-"assets/AssetManifest.json": "246f83122802bdbdc1af3be8c106038f",
+const RESOURCES = {"assets/AssetManifest.bin": "1844920260edc5eb1a177edda9ecde0a",
+"assets/AssetManifest.bin.json": "3d83306562d310d360f101f158a791b0",
+"assets/AssetManifest.json": "287f91cd9662055ad9eb77d7e61ac29b",
 "assets/assets/collection/collection.txt": "72a86026abb289634ec64d7f3b544f0c",
 "assets/assets/credentials/credentials.json": "79afa46ea94724708bfa69d5adbf9f12",
 "assets/assets/fonts/favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "assets/assets/images/background_wa.jpg": "ad508116087815c68ca2ac5063505366",
 "assets/assets/images/Captura_de_pantalla_2025-03-13_234358.png": "eafcf829c5911bb1f06678338e71cf58",
+"assets/assets/images/carga.json": "d99ddf8607735d5237765d3b3a3d4591",
 "assets/assets/images/errorwatsap.jpg": "751da8687f8b456b2d53233617f7238c",
 "assets/assets/images/favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "assets/assets/images/images_(3).png": "7cc9d3d2d686636d59acc685c18736ec",
@@ -33,7 +34,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "4718e7180679ec3bd58c57c7cfce7a0b
 "assets/assets/rive_animations/favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "assets/FontManifest.json": "97c2528ecc2fbf4093965257fdba1854",
 "assets/fonts/MaterialIcons-Regular.otf": "78d064510d50ff828fdb5edc8dc196cb",
-"assets/NOTICES": "0033635d396cb8e0c02a158ae46b855a",
+"assets/NOTICES": "9c8aad30749110d76aa55b9bea9877a1",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "33b7d9392238c04c131b6ce224e13711",
 "assets/packages/font_awesome_flutter/lib/fonts/Font%2520Awesome%25207%2520Brands-Regular-400.otf": "440da663f17184f21f007a3a2bf60f69",
 "assets/packages/font_awesome_flutter/lib/fonts/Font%2520Awesome%25207%2520Free-Regular-400.otf": "df86a1976d76bd04cf3fcaf5add2dd0f",
@@ -59,7 +60,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "4718e7180679ec3bd58c57c7cfce7a0b
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "index.html": "96e7fbf5fa72bb2e037b50dd5afb25a9",
 "/": "96e7fbf5fa72bb2e037b50dd5afb25a9",
-"main.dart.js": "bb6081b7277375f0d3719c4fbed1dbec",
+"main.dart.js": "a3d49ef5a58a3e6224d8bc83597bff78",
 "version.json": "9f952d0182aeec3b80097cdf627e6035"};
 // The application shell files that are downloaded before a service worker can
 // start.

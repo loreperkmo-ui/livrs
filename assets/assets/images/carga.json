@@ -1,0 +1,258 @@
+{
+  "v": "5.9.0",
+  "fr": 60,
+  "ip": 0,
+  "op": 1800,
+  "w": 300,
+  "h": 300,
+  "nm": "30 Second Countdown",
+  "ddd": 0,
+  "assets": [
+    {
+      "id": "image_0",
+      "w": 512,
+      "h": 512,
+      "u": "",
+      "p": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIAAgMAAAC0m4YkAAAACVBMVEUAAAD///8AAABzxoNxAAAAA3RSTlMA5TO9twAAAZVJREFUeNrt2zEOgkAURdFBIi6BxS6BxUpY7Oys7M7/YE0W4F8zLzE5ScnNnQsv0w3q6rruxwC8o6hazgF4R1G1nAPwjqJqOQfgHUXVcg7AO4qq5RyAdxRVyzkA7yiqlnMA3lFULecAvKOoWs4BeEdRtZwD8I6iajkH4B1F1XIOwDuKquUcgHcUVcs5AO8oqpZzAN5RVC3nALyjqFrOAXhHUbWcA/COomo5B+AdRdVyDsA7iqrlHIB3FFXLOQDvKKqWcwDeUVQt5wC8o6hazgF4R1G1nAPwjqJqOQfgHUXVcg7AO4qq5RyAdxRVyzkA7yiqlnMA3lFULecAvKOoWs4BeEdRtZwD8I6iajkH4B1F1XIOwDuKquUcgHcUVcs5AO8oqpZzAN5RVC3nALyjqFrOAXhHUbWcA/COomo5B+AdRdVyDsA7iqrlHIB3FFXLOQDvKKqWcwDeUVQt5wC8o6hazgF4R1G1nAPwjqJqOQfgHUXVcg7AO4qq5RyAdxRVyzkA7yiqlnMA3lFULecAvKOoWs4BeEdRtZwD8I6iajkH4B1F1XIOwDuKquUcgHcUVcs5AO8oqpZzAN5RVC3nALyjqlnPvAY9fA0UjXpKmAAAAAElFTkSuQmCC",
+      "e": 1
+    }
+  ],
+  "layers": [
+    {
+      "ddd": 0,
+      "ind": 1,
+      "ty": 2,
+      "nm": "Circle Background",
+      "cl": "circle",
+      "refId": "image_0",
+      "sr": 1,
+      "ks": {
+        "o": { "a": 0, "k": 100, "ix": 11 },
+        "r": { "a": 1, "k": [
+          { "t": 0, "s": [0], "h": 0 },
+          { "t": 1800, "s": [360], "h": 0 }
+        ], "ix": 10 },
+        "p": { "a": 0, "k": [150, 150, 0], "ix": 2 },
+        "a": { "a": 0, "k": [256, 256, 0], "ix": 1 },
+        "s": { "a": 0, "k": [50, 50, 100], "ix": 6 }
+      },
+      "ao": 0,
+      "ip": 0,
+      "op": 1800,
+      "st": 0,
+      "bm": 0
+    },
+    {
+      "ddd": 0,
+      "ind": 2,
+      "ty": 5,
+      "nm": "Timer Text",
+      "sr": 1,
+      "ks": {
+        "o": { "a": 0, "k": 100, "ix": 11 },
+        "r": { "a": 0, "k": 0, "ix": 10 },
+        "p": { "a": 0, "k": [150, 150, 0], "ix": 2 },
+        "a": { "a": 0, "k": [0, 0, 0], "ix": 1 },
+        "s": { "a": 0, "k": [100, 100, 100], "ix": 6 }
+      },
+      "ao": 0,
+      "t": {
+        "d": {
+          "k": [
+            {
+              "t": 0,
+              "s": {
+                "f": "Arial-BoldMT",
+                "s": 60,
+                "t": "30",
+                "j": 1,
+                "tr": 0,
+                "lh": 72,
+                "ls": 0,
+                "fc": [0.2, 0.6, 1, 1]
+              }
+            },
+            {
+              "t": 300,
+              "s": {
+                "f": "Arial-BoldMT",
+                "s": 60,
+                "t": "29",
+                "j": 1,
+                "tr": 0,
+                "lh": 72,
+                "ls": 0,
+                "fc": [0.2, 0.6, 1, 1]
+              }
+            },
+            {
+              "t": 600,
+              "s": {
+                "f": "Arial-BoldMT",
+                "s": 60,
+                "t": "28",
+                "j": 1,
+                "tr": 0,
+                "lh": 72,
+                "ls": 0,
+                "fc": [0.2, 0.6, 1, 1]
+              }
+            },
+            {
+              "t": 900,
+              "s": {
+                "f": "Arial-BoldMT",
+                "s": 60,
+                "t": "27",
+                "j": 1,
+                "tr": 0,
+                "lh": 72,
+                "ls": 0,
+                "fc": [0.2, 0.6, 1, 1]
+              }
+            },
+            {
+              "t": 1200,
+              "s": {
+                "f": "Arial-BoldMT",
+                "s": 60,
+                "t": "26",
+                "j": 1,
+                "tr": 0,
+                "lh": 72,
+                "ls": 0,
+                "fc": [0.2, 0.6, 1, 1]
+              }
+            },
+            {
+              "t": 1500,
+              "s": {
+                "f": "Arial-BoldMT",
+                "s": 60,
+                "t": "25",
+                "j": 1,
+                "tr": 0,
+                "lh": 72,
+                "ls": 0,
+                "fc": [0.2, 0.6, 1, 1]
+              }
+            },
+            {
+              "t": 1800,
+              "s": {
+                "f": "Arial-BoldMT",
+                "s": 60,
+                "t": "24",
+                "j": 1,
+                "tr": 0,
+                "lh": 72,
+                "ls": 0,
+                "fc": [0.2, 0.6, 1, 1]
+              }
+            }
+          ]
+        }
+      },
+      "ip": 0,
+      "op": 1800,
+      "st": 0,
+      "bm": 0
+    },
+    {
+      "ddd": 0,
+      "ind": 3,
+      "ty": 4,
+      "nm": "Progress Circle",
+      "sr": 1,
+      "ks": {
+        "o": { "a": 0, "k": 100, "ix": 11 },
+        "r": { "a": 0, "k": 0, "ix": 10 },
+        "p": { "a": 0, "k": [150, 150, 0], "ix": 2 },
+        "a": { "a": 0, "k": [150, 150, 0], "ix": 1 },
+        "s": { "a": 0, "k": [100, 100, 100], "ix": 6 }
+      },
+      "ao": 0,
+      "shapes": [
+        {
+          "ty": "gr",
+          "it": [
+            {
+              "ty": "rc",
+              "d": 1,
+              "s": { "a": 0, "k": [250, 250], "ix": 2 },
+              "p": { "a": 0, "k": [0, 0], "ix": 3 },
+              "r": { "a": 0, "k": 125, "ix": 4 },
+              "nm": "Rectangle Path 1",
+              "mn": "ADBE Vector Shape - Rect",
+              "hd": false
+            },
+            {
+              "ty": "tm",
+              "s": {
+                "a": 1,
+                "k": [
+                  { "t": 0, "s": [0], "h": 0 },
+                  { "t": 1800, "s": [100], "h": 0 }
+                ],
+                "ix": 1
+              },
+              "e": { "a": 0, "k": 100, "ix": 2 },
+              "o": { "a": 0, "k": 0, "ix": 3 },
+              "m": 1,
+              "ix": 2,
+              "nm": "Trim Paths 1",
+              "mn": "ADBE Vector Filter - Trim",
+              "hd": false
+            },
+            {
+              "ty": "st",
+              "c": { "a": 0, "k": [0.2, 0.8, 0.4, 1], "ix": 3 },
+              "o": { "a": 0, "k": 100, "ix": 4 },
+              "w": { "a": 0, "k": 8, "ix": 5 },
+              "lc": 2,
+              "lj": 2,
+              "ml": 10,
+              "nm": "Stroke 1",
+              "mn": "ADBE Vector Graphic - Stroke",
+              "hd": false
+            },
+            {
+              "ty": "tr",
+              "p": { "a": 0, "k": [150, 150], "ix": 2 },
+              "a": { "a": 0, "k": [0, 0], "ix": 1 },
+              "s": { "a": 0, "k": [100, 100], "ix": 3 },
+              "r": { "a": 0, "k": 0, "ix": 6 },
+              "o": { "a": 0, "k": 100, "ix": 7 },
+              "sk": { "a": 0, "k": 0, "ix": 4 },
+              "sa": { "a": 0, "k": 0, "ix": 5 },
+              "nm": "Transform"
+            }
+          ],
+          "nm": "Rectangle 1",
+          "np": 4,
+          "cix": 2,
+          "bm": 0,
+          "ix": 1,
+          "mn": "ADBE Vector Group",
+          "hd": false
+        }
+      ],
+      "ip": 0,
+      "op": 1800,
+      "st": 0,
+      "bm": 0
+    }
+  ],
+  "markers": [
+    {
+      "tm": 0,
+      "cm": "Start",
+      "dr": 0
+    },
+    {
+      "tm": 1800,
+      "cm": "End",
+      "dr": 0
+    }
+  ]
+}
