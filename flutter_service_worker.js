@@ -3,9 +3,9 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"assets/AssetManifest.bin": "34e5ddff9e1995af664a7bf8da1e8f53",
-"assets/AssetManifest.bin.json": "4b3a54231148229ccef29796bd48860f",
-"assets/AssetManifest.json": "e5a294601f7ed7bf5ef34c253371d18a",
+const RESOURCES = {"assets/AssetManifest.bin": "fc75c7aa3db2db33248d4c9b9fa530aa",
+"assets/AssetManifest.bin.json": "1c3cd97f3b6e2aeb294201f9c3bd5161",
+"assets/AssetManifest.json": "d981ac87a6029b246ddf8cb2d2a29223",
 "assets/assets/collection/collection.txt": "72a86026abb289634ec64d7f3b544f0c",
 "assets/assets/credentials/credentials.json": "79afa46ea94724708bfa69d5adbf9f12",
 "assets/assets/fonts/favicon.png": "5dcef449791fa27946b3d35ad8803796",
@@ -15,6 +15,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "34e5ddff9e1995af664a7bf8da1e8f53
 "assets/assets/images/favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "assets/assets/images/images_(3).png": "7cc9d3d2d686636d59acc685c18736ec",
 "assets/assets/images/JvsnINJ2CZv.svg": "01c61745607fa923cd42e49853f02aa6",
+"assets/assets/images/loader.json": "7505ec856c4e8bf06799fcf7a2a8d112",
 "assets/assets/images/Meta_Inc._logo.jpg": "21f0920dea1460bf28437dd776eab5c2",
 "assets/assets/images/Meta_Inc._logo_(2).jpg": "35e8c9b13c9f1a68b1ee14f60d9e60c2",
 "assets/assets/images/RE1Mu3b.png": "9f14c20150a003d7ce4de57c298f0fba",
@@ -30,8 +31,8 @@ const RESOURCES = {"assets/AssetManifest.bin": "34e5ddff9e1995af664a7bf8da1e8f53
 "assets/assets/jsons/whatsapp_loop.json": "94e7858f184d819efcee8bb485a3e418",
 "assets/assets/rive_animations/favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "assets/FontManifest.json": "97c2528ecc2fbf4093965257fdba1854",
-"assets/fonts/MaterialIcons-Regular.otf": "668576e7bfe630508efe498c338a08e3",
-"assets/NOTICES": "9e5af69f8a0d2fdf336408a185772dd0",
+"assets/fonts/MaterialIcons-Regular.otf": "78d064510d50ff828fdb5edc8dc196cb",
+"assets/NOTICES": "0033635d396cb8e0c02a158ae46b855a",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "33b7d9392238c04c131b6ce224e13711",
 "assets/packages/font_awesome_flutter/lib/fonts/Font%2520Awesome%25207%2520Brands-Regular-400.otf": "440da663f17184f21f007a3a2bf60f69",
 "assets/packages/font_awesome_flutter/lib/fonts/Font%2520Awesome%25207%2520Free-Regular-400.otf": "df86a1976d76bd04cf3fcaf5add2dd0f",
@@ -57,7 +58,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "34e5ddff9e1995af664a7bf8da1e8f53
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "index.html": "96e7fbf5fa72bb2e037b50dd5afb25a9",
 "/": "96e7fbf5fa72bb2e037b50dd5afb25a9",
-"main.dart.js": "d6987dbb79be91d8d8e7e7de5e300659",
+"main.dart.js": "b52ef61b56f4e46c26296f4d74ccda44",
 "version.json": "9f952d0182aeec3b80097cdf627e6035"};
 // The application shell files that are downloaded before a service worker can
 // start.
